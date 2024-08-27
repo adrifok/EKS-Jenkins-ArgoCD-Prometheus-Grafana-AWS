@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/adrifok/EKS-Jenkins-ArgoCD-Prometheus-Grafana-AWS.git'
+                git credentialsId: 'GitHub', url: 'https://github.com/adrifok/EKS-Jenkins-ArgoCD-Prometheus-Grafana-AWS.git'
             }
         }
         stage('Sonarqube Analysis') {
